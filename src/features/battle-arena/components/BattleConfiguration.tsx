@@ -7,7 +7,7 @@ import {
   SelectItem,
   Input,
 } from '@heroui/react';
-import { ArrowRight, Clock, Target } from 'lucide-react';
+import { Clock, Target } from 'lucide-react';
 
 interface Props {
   // onNext: () => void;

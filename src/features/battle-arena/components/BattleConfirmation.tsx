@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button, Card, CardBody } from '@heroui/react';
-import { Play, X, Trophy, Target } from 'lucide-react';
+import { Play, X, Target } from 'lucide-react';
 import { motion } from 'framer-motion';
 // import FighterCard from './FighterCard';
 import VSAnimation from './VSAnimation';
-import BattleSummary from './BattleSummary';
+// import BattleSummary from './BattleSummary';
 import useBattleStore from '../stores/useBattleStore';
 import FighterCard from './FighterCard';
 import SummaryConfiguration from './battle-configuration/SummaryConfiguration';
@@ -144,7 +144,7 @@ const BattleConfirmation: React.FC<CombatConfirmationProps> = ({
                     : 'clash'
                   : 'slide'
               }
-              className="relative z-10 flex-1 max-w-md"
+              className="relative z-10 max-w-md flex-1"
             >
               {/* <FighterCard
                 fighter={fighter1}
@@ -178,7 +178,7 @@ const BattleConfirmation: React.FC<CombatConfirmationProps> = ({
                     : 'clash'
                   : 'slide'
               }
-              className="relative z-10 flex-1 max-w-md"
+              className="relative z-10 max-w-md flex-1"
             >
               {/* <FighterCard
                 fighter={fighter2}

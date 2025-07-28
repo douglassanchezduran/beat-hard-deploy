@@ -13,8 +13,8 @@ import {
 } from 'lucide-react';
 
 import { devSuccessLog } from '@utils/devLog';
-import { useBLEStore, type BleDevice } from '@stores/useBLEStore';
-import { Competitor } from '../../types';
+import { useBLEStore } from '@stores/useBLEStore';
+import { BleDevice, Competitor } from '../../types';
 
 interface Props {
   competitor: Competitor | null;
@@ -307,7 +307,7 @@ const DeviceList: React.FC<Props> = ({
                       )}
 
                       {/* Icono del dispositivo */}
-                      {getDeviceIcon(device.limb_type, isConnected, isSelected)}
+                      {getDeviceIcon(device.limb_type, isConnected)}
 
                       {/* Estado de conexión */}
                       <div className="flex items-center space-x-2">

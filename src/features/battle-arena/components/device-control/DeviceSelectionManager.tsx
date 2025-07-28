@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, CardBody, Button, Divider } from '@heroui/react';
 import { useBLEStore } from '@stores/useBLEStore';
 import DeviceList from './DeviceList';
-import CombatEventsDisplay from './CombatEventsDisplay';
+// import CombatEventsDisplay from './CombatEventsDisplay';
 import useBattleStore from '../../stores/useBattleStore';
 import { devErrorLog, devSuccessLog } from '@utils/devLog';
 import { BleDevice } from '@features/battle-arena/types';
@@ -37,7 +37,7 @@ const DeviceSelectionManager: React.FC = () => {
     state => state.setCompetitor2Devices,
   );
   const clearAllDevices = useBattleStore(state => state.clearAllDevices);
-  const nextStep = useBattleStore(state => state.nextStep);
+  // const nextStep = useBattleStore(state => state.nextStep);
 
   // Estado de conexión (mantiene useState porque es temporal)
   const [isConnectingCompetitor1, setIsConnectingCompetitor1] = useState(false);
